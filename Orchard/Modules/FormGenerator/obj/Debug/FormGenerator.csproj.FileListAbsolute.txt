@@ -1,0 +1,5 @@
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator\bin\FormGenerator.dll
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator\bin\FormGenerator.pdb
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator\obj\Debug\ResolveAssemblyReference.cache
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator\obj\Debug\FormGenerator.dll
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator\obj\Debug\FormGenerator.pdb

@@ -1,0 +1,11 @@
+Name: Default
+DataProvider: SqlServer
+DataConnectionString: Data Source=.\SQLEXPRESS;Initial Catalog=Modules;Integrated Security=True;Pooling=False
+DataPrefix: null
+RequestUrlHost: null
+RequestUrlPrefix: null
+State: Running
+EncryptionAlgorithm: AES
+EncryptionKey: 7FD8B42C057A9F8F79DC5D6E4A1A9B4265A52FCC41F6A3949A949553451D09BD
+HashAlgorithm: HMACSHA256
+HashKey: 59F1F60AD7CD3EA76F6C8855BD17A5DF1C8323DCF5763D6FDD636DF161FAEF49EB40ACF43F13FF041F635D5D06418781185125BDA27720D4688BC03F01740035

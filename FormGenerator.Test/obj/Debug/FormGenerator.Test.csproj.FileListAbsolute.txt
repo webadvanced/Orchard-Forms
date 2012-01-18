@@ -1,0 +1,9 @@
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\bin\Debug\FormGenerator.Test.dll
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\bin\Debug\FormGenerator.Test.pdb
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\bin\Debug\xunit.dll
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\bin\Debug\xunit.extensions.dll
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\bin\Debug\xunit.xml
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\bin\Debug\xunit.extensions.xml
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\obj\Debug\FormGenerator.Test.dll
+C:\root\development\work\OrchardModules\FormGenerator\FormGenerator.Test\obj\Debug\FormGenerator.Test.pdb

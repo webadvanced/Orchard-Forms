@@ -1,0 +1,7 @@
+C:\root\development\work\OrchardModules\FormGenerator\MyOrchard\bin\MyOrchard.dll
+C:\root\development\work\OrchardModules\FormGenerator\MyOrchard\bin\MyOrchard.pdb
+C:\root\development\work\OrchardModules\FormGenerator\MyOrchard\bin\EntityFramework.dll
+C:\root\development\work\OrchardModules\FormGenerator\MyOrchard\bin\EntityFramework.xml
+C:\root\development\work\OrchardModules\FormGenerator\MyOrchard\obj\Debug\ResolveAssemblyReference.cache
+C:\root\development\work\OrchardModules\FormGenerator\MyOrchard\obj\Debug\MyOrchard.dll
+C:\root\development\work\OrchardModules\FormGenerator\MyOrchard\obj\Debug\MyOrchard.pdb

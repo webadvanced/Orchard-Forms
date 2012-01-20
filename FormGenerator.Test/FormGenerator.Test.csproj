@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Orchard.Framework">
+      <HintPath>..\Orchard\Bin\Orchard.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,10 +49,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassTest.cs" />
+    <Compile Include="ObjectMother.cs" />
+    <Compile Include="ObjectTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormGenerator\FormGenerator.csproj">
+      <Project>{09C63C63-3968-4462-838F-27AF63372741}</Project>
+      <Name>FormGenerator</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

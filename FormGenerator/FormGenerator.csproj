@@ -40,6 +40,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Orchard.Core">
+      <HintPath>..\Orchard\bin\Orchard.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Orchard.Framework">
+      <HintPath>..\Orchard\bin\Orchard.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.ComponentModel.DataAnnotations">
@@ -66,18 +72,22 @@
     <Content Include="Module.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Orchard.Core">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\Orchard.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Orchard.Framework">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\Orchard.Framework.dll</HintPath>
-    </Reference>
+    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\Factories\ObjectFactory.cs" />
+    <Compile Include="Models\Factories\PropertyFactory.cs" />
+    <Compile Include="Models\Object.cs" />
+    <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\Validation\EmailValidationRule.cs" />
+    <Compile Include="Models\Validation\IValidationRule.cs" />
+    <Compile Include="Models\Validation\NumberValidationRule.cs" />
+    <Compile Include="Models\Value.cs" />
+    <Compile Include="Models\VisualAppearance\DisplayContext.cs" />
+    <Compile Include="Models\VisualAppearance\IAppearanceHandler.cs" />
+    <Compile Include="Models\VisualAppearance\RadioButtonHandler.cs" />
+    <Compile Include="Models\VisualAppearance\TextBoxHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -33,3 +33,5 @@ C:\root\development\work\OrchardModules\Form_Generator\FormGenerator.Test\bin\De
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator.Test\bin\Debug\Orchard.Framework.pdb
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator.Test\bin\Debug\ClaySharp.pdb
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator.Test\bin\Debug\FluentNHibernate.pdb
+C:\root\development\work\OrchardModules\Form_Generator\FormGenerator.Test\bin\Debug\Orchard.Core.dll
+C:\root\development\work\OrchardModules\Form_Generator\FormGenerator.Test\bin\Debug\Orchard.Core.pdb

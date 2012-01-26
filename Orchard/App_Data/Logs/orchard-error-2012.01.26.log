@@ -1,0 +1,592 @@
+2012-01-26 10:20:05,209 [6] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - IdentifierGenerationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Id.IdentifierGenerationException: attempted to assign id from null one-to-one property: ContentItemRecord
+   at NHibernate.Id.ForeignGenerator.Generate(ISessionImplementor sessionImplementor, Object obj)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.Save(Object obj)
+   at Orchard.Data.Repository`1.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 96
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 36
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:23:50,429 [18] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:23:50,454 [18] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:23:50,464 [18] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:24:02,581 [18] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:24:02,590 [18] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:24:02,599 [18] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:24:11,654 [18] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - IdentifierGenerationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Id.IdentifierGenerationException: attempted to assign id from null one-to-one property: ContentItemRecord
+   at NHibernate.Id.ForeignGenerator.Generate(ISessionImplementor sessionImplementor, Object obj)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.Save(Object obj)
+   at Orchard.Data.Repository`1.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 96
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 36
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:33:09,507 [5] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - IdentifierGenerationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Id.IdentifierGenerationException: attempted to assign id from null one-to-one property: ContentItemRecord
+   at NHibernate.Id.ForeignGenerator.Generate(ISessionImplementor sessionImplementor, Object obj)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.Save(Object obj)
+   at Orchard.Data.Repository`1.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 96
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 36
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:37:38,981 [10] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:37:39,004 [10] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:37:39,019 [10] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:37:44,975 [10] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - GenericADOException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Exceptions.GenericADOException: could not initialize a collection: [FormGenerator.Models.Class.Properties#14][SQL: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=?] ---> System.Data.SqlClient.SqlException: Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   at NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   at NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   at NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Write()
+   at NHibernate.Collection.Generic.PersistentGenericBag`1.System.Collections.Generic.ICollection<T>.Add(T item)
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:38:53,166 [5] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:38:53,176 [5] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:38:53,184 [5] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:38:55,530 [5] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:38:55,538 [5] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:38:55,547 [5] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:39:13,429 [5] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:39:13,445 [5] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:39:13,458 [5] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:39:19,653 [5] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - GenericADOException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Exceptions.GenericADOException: could not initialize a collection: [FormGenerator.Models.Class.Properties#14][SQL: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=?] ---> System.Data.SqlClient.SqlException: Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   at NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   at NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   at NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Write()
+   at NHibernate.Collection.Generic.PersistentGenericBag`1.System.Collections.Generic.ICollection<T>.Add(T item)
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:39:19,662 [16] NHibernate.Util.ADOExceptionReporter - A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - The pipe has been ended.)
+2012-01-26 10:39:19,662 [16] NHibernate.Util.ADOExceptionReporter - A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - The pipe has been ended.)
+2012-01-26 10:39:19,663 [16] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ? ]
+Positional parameters:  #0>1/26/2012 6:39:19 PM
+[SQL: SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ?] ---> System.Data.SqlClient.SqlException: A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - The pipe has been ended.)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.ReadBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-01-26 10:54:08,468 [14] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:54:08,495 [14] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:54:08,510 [14] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:55:27,097 [14] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - GenericADOException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Exceptions.GenericADOException: could not initialize a collection: [FormGenerator.Models.Class.Properties#14][SQL: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=?] ---> System.Data.SqlClient.SqlException: Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   at NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   at NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   at NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Write()
+   at NHibernate.Collection.Generic.PersistentGenericBag`1.System.Collections.Generic.ICollection<T>.Add(T item)
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:56:59,514 [4] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-01-26 10:56:59,541 [4] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:56:59,556 [4] NHibernate.Util.ADOExceptionReporter - Invalid column name 'DisplayContext_id'.
+2012-01-26 10:57:36,069 [4] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - GenericADOException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Exceptions.GenericADOException: could not initialize a collection: [FormGenerator.Models.Class.Properties#14][SQL: SELECT properties0_.Class_Id as Class4_1_, properties0_.Id as Id1_, properties0_.Id as Id1_0_, properties0_.Name as Name1_0_, properties0_.Settings as Settings1_0_, properties0_.Class_id as Class4_1_0_, properties0_.DisplayContext_id as DisplayC5_1_0_ FROM FormGenerator_Property properties0_ WHERE properties0_.Class_Id=?] ---> System.Data.SqlClient.SqlException: Invalid column name 'DisplayContext_id'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   at NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   at NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   at NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   at NHibernate.Collection.Generic.PersistentGenericBag`1.System.Collections.Generic.ICollection<T>.Add(T item)
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:57:48,763 [6] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - TargetInvocationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at FormGenerator.Models.VisualAppearance.TextBoxHandler.<>c__DisplayClass3.<Display>b__2(Property property)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Models.VisualAppearance.TextBoxHandler.Display(Class dClass, ViewContext viewContext, Object shapeHelper)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle._InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.RuntimeMethodHandle.InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at FormGenerator.Services.Implementation.DisplayService.<>c__DisplayClass1.<Display>b__0(Type ct)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Services.Implementation.DisplayService.Display(Class dClass, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 10:57:48,848 [6] NHibernate.Event.Default.AbstractFlushingEventListener - Could not synchronize database state with session
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing. Type: FormGenerator.Models.Property, Entity: FormGenerator.Models.Property
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetIdentifier(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.InsertRows(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2012-01-26 10:57:48,849 [6] NHibernate.Impl.AbstractSessionImpl - DTC transaction prepre phase failed
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing. Type: FormGenerator.Models.Property, Entity: FormGenerator.Models.Property
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetIdentifier(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.InsertRows(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Transaction.AdoNetWithDistrubtedTransactionFactory.DistributedTransactionContext.System.Transactions.IEnlistmentNotification.Prepare(PreparingEnlistment preparingEnlistment)
+2012-01-26 11:00:28,907 [30] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - IdentifierGenerationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Id.IdentifierGenerationException: attempted to assign id from null one-to-one property: ContentItemRecord
+   at NHibernate.Id.ForeignGenerator.Generate(ISessionImplementor sessionImplementor, Object obj)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.Save(Object obj)
+   at Orchard.Data.Repository`1.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 96
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 36
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 11:01:22,400 [38] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - IdentifierGenerationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+NHibernate.Id.IdentifierGenerationException: attempted to assign id from null one-to-one property: ContentItemRecord
+   at NHibernate.Id.ForeignGenerator.Generate(ISessionImplementor sessionImplementor, Object obj)
+   at NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   at NHibernate.Impl.SessionImpl.Save(Object obj)
+   at Orchard.Data.Repository`1.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 96
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 36
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 11:08:09,093 [40] NHibernate.Impl.AbstractSessionImpl - DTC transaction prepre phase failed
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing. Type: FormGenerator.Models.DisplayContext, Entity: FormGenerator.Models.DisplayContext
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetIdentifier(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.IsDirty(Object old, Object current, Boolean[] checkable, ISessionImplementor session)
+   at NHibernate.Type.TypeFactory.FindDirty(StandardProperty[] properties, Object[] x, Object[] y, Boolean[][] includeColumns, Boolean anyUninitializedProperties, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.FindDirty(Object[] currentState, Object[] previousState, Object entity, ISessionImplementor session)
+   at NHibernate.Event.Default.DefaultFlushEntityEventListener.DirtyCheck(FlushEntityEvent event)
+   at NHibernate.Event.Default.DefaultFlushEntityEventListener.IsUpdateNecessary(FlushEntityEvent event, Boolean mightBeDirty)
+   at NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   at NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   at NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Transaction.AdoNetWithDistrubtedTransactionFactory.DistributedTransactionContext.System.Transactions.IEnlistmentNotification.Prepare(PreparingEnlistment preparingEnlistment)
+2012-01-26 11:19:13,612 [34] NHibernate.Event.Default.AbstractFlushingEventListener - Could not synchronize database state with session
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing. Type: FormGenerator.Models.Property, Entity: FormGenerator.Models.Property
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetIdentifier(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.InsertRows(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2012-01-26 11:19:13,621 [34] NHibernate.Impl.AbstractSessionImpl - DTC transaction prepre phase failed
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing. Type: FormGenerator.Models.Property, Entity: FormGenerator.Models.Property
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetIdentifier(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.InsertRows(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Transaction.AdoNetWithDistrubtedTransactionFactory.DistributedTransactionContext.System.Transactions.IEnlistmentNotification.Prepare(PreparingEnlistment preparingEnlistment)
+2012-01-26 12:21:17,376 [25] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.TryGetValue(TKey key, TValue& value)
+   at Orchard.ContentManagement.DefaultContentDisplay.<>c__DisplayClass18.<BindPlacement>b__17(String partShapeType, String differentiator, String defaultLocation) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentDisplay.cs:line 114
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 67
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 15
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 15
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 50
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 12:22:18,226 [46] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ArgumentNullException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.TryGetValue(TKey key, TValue& value)
+   at Orchard.ContentManagement.DefaultContentDisplay.<>c__DisplayClass18.<BindPlacement>b__17(String partShapeType, String differentiator, String defaultLocation) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentDisplay.cs:line 114
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 67
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 15
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 15
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 50
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19

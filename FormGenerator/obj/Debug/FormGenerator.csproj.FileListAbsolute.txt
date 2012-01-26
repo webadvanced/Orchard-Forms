@@ -11,7 +11,6 @@ C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\obj\Debug\F
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Orchard.Core.dll
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Orchard.Framework.dll
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\ClaySharp.dll
-C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\FluentNHibernate.dll
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Autofac.dll
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\log4net.dll
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Castle.Core.dll

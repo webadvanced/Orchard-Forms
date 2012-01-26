@@ -1,0 +1,13 @@
+﻿<Placement>
+
+  <Match ContentType="Form">
+    <Place Parts_Form="Content:1"/>
+  </Match>
+
+
+
+  <Place Fields_Textbox="Content:12"/>
+  <Place Fields_RadioButton="Content:11"/>
+
+
+</Placement>

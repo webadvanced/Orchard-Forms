@@ -9,12 +9,12 @@ namespace FormGenerator.Test
 {
     public class ClassTest
     {
-        [Fact]
-        public void ShouldBeAbleToHaveProperty()
-        {
-            var dClass = ObjectMother.BuildClass();
-            dClass.Properties.Add(ObjectMother.BuildProperty());
-            Assert.Equal(1, dClass.Properties.Count);
-        }
+        //[Fact]
+        //public void ShouldBeAbleToHaveProperty()
+        //{
+        //    var dClass = ObjectMother.BuildClass();
+        //    dClass.Properties.Add(ObjectMother.BuildProperty());
+        //    Assert.Equal(1, dClass.Properties.Count);
+        //}
     }
 }

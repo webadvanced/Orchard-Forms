@@ -54,6 +54,8 @@
     <Compile Include="ObjectTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyTest.cs" />
+    <Compile Include="TestVisualAppearance.cs" />
+    <Compile Include="TextBoxTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

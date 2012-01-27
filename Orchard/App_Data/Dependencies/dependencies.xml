@@ -31,10 +31,22 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.ContentTypes</ModuleName>
+    <VirtualPath>~/Modules/Orchard.ContentTypes/bin/Orchard.ContentTypes.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>FormGenerator</ModuleName>
     <VirtualPath>~/Modules/FormGenerator/bin/FormGenerator.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
+    <References>
+      <Reference>
+        <Name>Orchard.ContentTypes</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.ContentTypes/bin/Orchard.ContentTypes.dll</VirtualPath>
+      </Reference>
+    </References>
   </Dependency>
   <Dependency>
     <ModuleName>HomePage</ModuleName>
@@ -83,12 +95,6 @@
         <VirtualPath>~/Modules/Orchard.Comments/bin/Joel.Net.Akismet.dll</VirtualPath>
       </Reference>
     </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.ContentTypes</ModuleName>
-    <VirtualPath>~/Modules/Orchard.ContentTypes/bin/Orchard.ContentTypes.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
   </Dependency>
   <Dependency>
     <ModuleName>Orchard.Scripting</ModuleName>

@@ -2,7 +2,6 @@
 @using Orchard.Utility.Extensions;
 
 @{
-  Style.Include("contrib-imagefield.css");
   Property p = Model.property;
 }
 
@@ -13,6 +12,6 @@
 </p>
 }*@
 
-<span>@p.Name :</span>
-<input type="text" name='@p.DisplayContext.Name' />
+<span>@p.DisplayContext.Name :</span>
+<input type="text" name='@p.Name' />
 <br />

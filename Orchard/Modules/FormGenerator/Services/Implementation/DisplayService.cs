@@ -10,28 +10,18 @@ namespace FormGenerator.Services.Implementation
 {
     public class DisplayService : IDisplayService
     {
-        public IEnumerable<ViewContext> Display(Class dClass, dynamic shapeHelper)
+        public ViewContext Display(Class dClass, dynamic shapeHelper, string propertyName)
         {
-            var list = new List<ViewContext>();
-
+            var viewContext = new ViewContext();
+            var property = dClass.Properties.Single(p => p.Name == propertyName);
             var derivedTypes = TypesImplementingInterface(typeof(IAppearanceHandler));
             derivedTypes.ToList().ForEach(ct =>
-                                              {
-                                                  dClass.Properties.ToList().ForEach(property =>
-                                                  {
-                                                      var viewContext = new ViewContext();
-                                                      ConstructorInfo ci = ct.GetConstructor(new Type[] { });
-                                                      var instance = ci.Invoke(new Object[] { });
-                                                      ct.GetMethod("Display").Invoke(instance, new object[] { property, viewContext, shapeHelper });
-                                                      if (viewContext.ShapeResult != null)
-                                                      {
-                                                          list.Add(viewContext);
-                                                      }
-                                                  });
+                                              {                                                 
+                                                  ConstructorInfo ci = ct.GetConstructor(new Type[] { });
+                                                  var instance = ci.Invoke(new Object[] { });
+                                                  ct.GetMethod("Display").Invoke(instance, new object[] { property, viewContext, shapeHelper });
                                               });
-            //var handler = new TextBoxHandler();
-            //handler.Display(dClass,viewContext,);
-            return list;
+            return viewContext;
         }
 
         public void Editor(Class dClass)

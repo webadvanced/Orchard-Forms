@@ -2,6 +2,7 @@
 
   <Match ContentType="Form">
     <Place Parts_Form="Content:1"/>
+    <Place Form_Create="Content:1"/>
   </Match>
 
 

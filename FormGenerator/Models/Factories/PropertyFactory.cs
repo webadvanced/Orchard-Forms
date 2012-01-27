@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using FormGenerator.Models.Validation;
 using FormGenerator.Models.VisualAppearance;
+using FormGenerator.Services;
 using Orchard.ContentManagement;
 
 namespace FormGenerator.Models.Factories
@@ -12,26 +13,28 @@ namespace FormGenerator.Models.Factories
 
         public PropertyFactory(IContentManager contentManager)
         {
-            _contentManager = contentManager;
+            _contentManager = contentManager;       
         }
 
 
-        public Property Create(Class dClass, string name, IEnumerable<IValidationRule> validationRules, string displayName, string displayType, string settings)
+        public Property Create(Class dClass,Action<Property> initialize)
         {
+            var property = new Property();
+            initialize(property);
             var errorMessage = "";
             if(dClass == null)
             {
                 errorMessage += "Class should not be null" + Environment.NewLine;
             }
-            if(string.IsNullOrEmpty(name))
+            if(string.IsNullOrEmpty(property.Name))
             {
                 errorMessage += "Name should not be empty or null";
             }
-            if (string.IsNullOrEmpty(displayName))
+            if (string.IsNullOrEmpty(property.DisplayContext.Name))
             {
                 errorMessage += "DisplayName should not be empty or null";
             }
-            if (string.IsNullOrEmpty(displayType))
+            if (string.IsNullOrEmpty(property.DisplayContext.Type))
             {
                 errorMessage +=  "Type should not be empty or null";
             }
@@ -42,18 +45,13 @@ namespace FormGenerator.Models.Factories
 
             var displayContext = _contentManager.Create<DisplayContextPart>("DisplayContext", d =>
                                                                                               {
-                                                                                                  d.Name = displayName;
-                                                                                                  d.Type = displayType;
+                                                                                                  d.Name = property.DisplayContext.Name;
+                                                                                                  d.Type = property.DisplayContext.Type;
                                                                                               });
 
-            var property = new Property
-                               {
-                                   Class = dClass,
-                                   Name = name,
-                                   ValidationRules = validationRules,
-                                   DisplayContext = displayContext.Record,
-                                   Settings = settings
-                               };
+            property.Class = dClass;
+            property.DisplayContext = displayContext.Record;                                   
+                               
             var propertyPart = _contentManager.Create<PropertyPart>("Property", p =>
             {
                 p.Class = property.Class;
@@ -61,7 +59,7 @@ namespace FormGenerator.Models.Factories
                 p.Name = property.Name;
                 p.Settings = property.Settings;
             });
-            _contentManager.Flush();
+            _contentManager.Flush();             
             return propertyPart.Record;
         }
     }

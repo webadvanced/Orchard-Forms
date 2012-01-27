@@ -1,0 +1,12 @@
+﻿<h2>@T("Create New")</h2>
+@{
+    if (true)
+    {
+        int a = 23;
+    }
+}
+@using (Html.BeginFormAntiForgeryPost("CreatePOST",FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    @Display(Model.ContentItems)
+}

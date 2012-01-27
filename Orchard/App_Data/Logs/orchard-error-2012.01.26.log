@@ -590,3 +590,416 @@ Parameter name: key
    at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 15
    at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 50
    at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 13:56:13,787 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:56:13,916 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:56:15,958 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:56:16,067 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:56:17,464 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:56:17,522 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:57:07,879 [45] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:57:07,895 [45] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:57:08,208 [45] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:57:08,209 [45] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:57:08,227 [45] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 13:57:08,227 [45] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:21,245 [19] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:21,261 [19] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:21,522 [19] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:21,522 [19] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:21,538 [19] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:21,538 [19] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:44,547 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:44,563 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:44,847 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:44,847 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:44,866 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:04:44,866 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:21:54,396 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:21:54,412 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:21:54,677 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:21:54,677 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:21:54,699 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:21:54,700 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:22:14,243 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:22:14,244 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:22:14,261 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:22:14,262 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:22:14,275 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:22:14,275 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:45,428 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:45,510 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:47,174 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:47,240 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:48,570 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:48,636 [21] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:58,184 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:23:58,303 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:24:00,401 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:24:00,493 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:24:02,497 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:24:02,649 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:42,292 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:42,292 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:42,308 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:42,308 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:42,324 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:42,324 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:53,236 [11] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:53,303 [11] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:54,603 [11] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:54,670 [11] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:55,974 [11] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:25:56,041 [11] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:28:18,297 [28] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:28:18,379 [28] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:28:19,992 [28] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:28:20,059 [28] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:28:21,341 [28] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:28:21,402 [28] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:08,879 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:08,894 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:09,171 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:09,171 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:09,192 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:09,192 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:26,357 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:26,415 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:27,590 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:27,650 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:28,777 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:28,833 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:48,925 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:48,991 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:49,248 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:49,248 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:49,269 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:33:49,269 [39] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:43:13,793 [37] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:43:13,810 [37] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:43:14,115 [37] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:43:14,116 [37] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:43:14,135 [37] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:43:14,135 [37] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:03,677 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:03,691 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:03,965 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:03,965 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:03,986 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:03,987 [52] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:21,161 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:21,161 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:21,177 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:21,177 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:21,195 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:51:21,195 [44] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:28,502 [40] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:28,577 [40] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:29,780 [40] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:29,834 [40] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:30,963 [40] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:31,021 [40] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:46,894 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:46,952 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:48,079 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:48,140 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:49,237 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:52:49,293 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:10,926 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:10,926 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:10,948 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:10,949 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:10,965 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:10,965 [26] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:42,644 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:42,659 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:42,929 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:42,929 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:42,957 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:53:42,957 [20] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-26 14:55:26,535 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Editor(ContentPart part, GenericField field, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   at CallSite.Target(Closure , CallSite , ContentFieldDriver`1 , ContentPart , GenericField , Object )
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClassd.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape>b__c(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 23
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildEditorShape(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 23
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassc.<BuildEditor>b__b(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 56
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:55:36,582 [39] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ApplicationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.ApplicationException: Error in the application.
+   at FormGenerator.Drivers.GenericFieldDriver.Editor(ContentPart part, GenericField field, IUpdateModel updater, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 27
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 27
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 64
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:55:52,266 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ApplicationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.ApplicationException: Error in the application.
+   at FormGenerator.Drivers.GenericFieldDriver.Editor(ContentPart part, GenericField field, IUpdateModel updater, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at CallSite.Target(Closure , CallSite , ContentFieldDriver`1 , ContentPart , GenericField , IUpdateModel , Object )
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 27
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 27
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 64
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:55:52,512 [20] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:56:06,619 [52] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at CallSite.Target(Closure , CallSite , ContentFieldDriver`1 , ContentPart , GenericField , String , Object )
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:56:19,122 [52] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:56:21,344 [44] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:56:29,267 [44] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:56:39,406 [27] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:56:53,127 [44] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 14:57:00,180 [40] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - InvalidCastException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.InvalidCastException: Unable to cast object of type 'Orchard.Blogs.Models.BlogPart' to type 'FormGenerator.Models.FormPart'.
+   at FormGenerator.Drivers.GenericFieldDriver.Display(ContentPart part, GenericField field, String displayType, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass7.<Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape>b__6(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.BuildDisplayShape(BuildDisplayContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 19
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClass9.<BuildDisplay>b__8(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 48
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 15:03:00,633 [44] Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator - ApplicationException thrown from IContentFieldDriver by FormGenerator.Drivers.GenericFieldDriver
+System.ApplicationException: Error in the application.
+   at FormGenerator.Drivers.GenericFieldDriver.Editor(ContentPart part, GenericField field, IUpdateModel updater, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute5[T0,T1,T2,T3,T4,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+   at CallSite.Target(Closure , CallSite , ContentFieldDriver`1 , ContentPart , GenericField , IUpdateModel , Object )
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass13.<Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape>b__12(ContentPart part, TField field) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 27
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.<>c__DisplayClass2a.<Process>b__28(<>f__AnonymousType4`2 pf) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 56
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Process(ContentItem item, Func`3 effort) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 57
+   at Orchard.ContentManagement.Drivers.ContentFieldDriver`1.Orchard.ContentManagement.Drivers.IContentFieldDriver.UpdateEditorShape(UpdateEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentFieldDriver.cs:line 27
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentFieldDriverCoordinator.<>c__DisplayClassf.<UpdateEditor>b__e(IContentFieldDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentFieldDriverCoordinator.cs:line 64
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-01-26 15:03:00,639 [44] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - ApplicationException thrown from IContentPartDriver by FormGenerator.Drivers.FormDriver
+System.ApplicationException: Error in the application.
+   at FormGenerator.Drivers.FormDriver.Editor(FormPart part, IUpdateModel updater, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 30
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass10.<UpdateEditor>b__f(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 61
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19

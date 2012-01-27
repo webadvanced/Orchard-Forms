@@ -45,6 +45,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Orchard\bin\NHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="Orchard.ContentTypes">
+      <HintPath>..\Orchard\Modules\Orchard.ContentTypes\bin\Orchard.ContentTypes.dll</HintPath>
+    </Reference>
     <Reference Include="Orchard.Core">
       <HintPath>..\Orchard\bin\Orchard.Core.dll</HintPath>
     </Reference>
@@ -76,10 +79,9 @@
     <Content Include="Properties\AssemblyInfo.cs" />
     <Content Include="Module.txt" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Controllers\FormController.cs" />
     <Compile Include="Drivers\DisplayContextDriver.cs" />
     <Compile Include="Drivers\FormDriver.cs" />
     <Compile Include="Drivers\GenericFieldDriver.cs" />
@@ -107,13 +109,17 @@
     <Compile Include="Models\VisualAppearance\RadioButtonHandler.cs" />
     <Compile Include="Models\VisualAppearance\TextBoxHandler.cs" />
     <Compile Include="Models\VisualAppearance\ViewContext.cs" />
+    <Compile Include="Routes.cs" />
+    <Compile Include="Services\IDefinitionService.cs" />
     <Compile Include="Services\IDisplayService.cs" />
+    <Compile Include="Services\Implementation\DefinitionService.cs" />
     <Compile Include="Services\Implementation\DisplayService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Placement.info" />
     <None Include="Views\Fields\RadioButton.cshtml" />
     <None Include="Views\Fields\Textbox.cshtml" />
+    <None Include="Views\Form\Create.cshtml" />
     <None Include="Views\Parts\Form.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

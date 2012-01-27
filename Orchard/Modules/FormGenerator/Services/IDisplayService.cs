@@ -7,7 +7,7 @@ namespace FormGenerator.Services
 {
     public interface IDisplayService : IDependency
     {
-        IEnumerable<ViewContext> Display(Class dClass, dynamic shapeHelper);
+        ViewContext Display(Class dClass, dynamic shapeHelper,string propertyName);
         void Editor(Class dClass);
         void Process(Object o);
     }

@@ -4,7 +4,7 @@
     <ExtensionId>FormGenerator</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/FormGenerator/bin/FormGenerator.dll</VirtualPath>
-    <Hash>48fa82ab56b6f38e</Hash>
+    <Hash>925f5eea337d9f3c</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Markdown</ExtensionId>

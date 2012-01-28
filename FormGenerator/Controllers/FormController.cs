@@ -26,16 +26,16 @@ namespace FormGenerator.Controllers
 
         public ActionResult Create()
         {
-            //_definitionService.AddPropertyToClass(_contentManager.Query<FormPart>().List().First().Record, p =>
-            //{
-            //    p.Name = "ThirdTextBox";
-            //    p.DisplayContext = new DisplayContext
-            //    {
-            //        Name = "Third Text Box",
-            //        Type = "TextBox"
-            //    };
-            //    p.Settings = "";
-            //});
+            _definitionService.AddPropertyToClass(_contentManager.Query<FormPart>().List().First().Record, p =>
+            {
+                p.Name = "TextBox7";
+                p.DisplayContext = new DisplayContext
+                {
+                    Name = "Text Box 7",
+                    Type = "TextBox"
+                };
+                p.Settings = "";
+            });
 
 
             var form =_services.ContentManager.BuildEditor(_contentManager.Query<FormPart>().List().First());

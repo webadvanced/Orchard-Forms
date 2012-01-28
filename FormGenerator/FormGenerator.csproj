@@ -86,6 +86,8 @@
     <Compile Include="Drivers\FormDriver.cs" />
     <Compile Include="Drivers\GenericFieldDriver.cs" />
     <Compile Include="Drivers\PropertyDriver.cs" />
+    <Compile Include="Field\FieldUpdateModel.cs" />
+    <Compile Include="Field\Settings\GenericFieldEditorEvents.cs" />
     <Compile Include="Handlers\ClassHandler.cs" />
     <Compile Include="Handlers\DisplayContextHandler.cs" />
     <Compile Include="Handlers\ObjectHandler.cs" />
@@ -104,7 +106,8 @@
     <Compile Include="Models\Validation\NumberValidationRule.cs" />
     <Compile Include="Models\Value.cs" />
     <Compile Include="Models\DisplayContext.cs" />
-    <Compile Include="Models\VisualAppearance\GenericField.cs" />
+    <Compile Include="Field\GenericField.cs" />
+    <Compile Include="Field\Settings\GenericFieldSettings.cs" />
     <Compile Include="Models\VisualAppearance\IAppearanceHandler.cs" />
     <Compile Include="Models\VisualAppearance\RadioButtonHandler.cs" />
     <Compile Include="Models\VisualAppearance\TextBoxHandler.cs" />

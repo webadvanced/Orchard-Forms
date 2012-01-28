@@ -48,3 +48,11 @@ NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned 
 NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
 2012-01-27 11:58:58,184 [13] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
 NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 14:08:07,082 [76] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 14:08:07,161 [76] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 14:08:07,985 [76] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 14:08:07,985 [76] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.

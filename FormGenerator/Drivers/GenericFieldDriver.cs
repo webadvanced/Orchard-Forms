@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using FormGenerator.Field;
+using FormGenerator.Field.Settings;
 using FormGenerator.Models;
 using FormGenerator.Models.Factories;
 using FormGenerator.Models.VisualAppearance;
@@ -40,7 +42,7 @@ namespace FormGenerator.Drivers
 
             //dClass.Properties.Add(property);
             IEnumerable<ViewContext> viewContexts = _displayService.Display(dClass, shapeHelper,field.Name);
-
+            var t = field.PartFieldDefinition.Settings.GetModel<GenericFieldSettings>().MaxLength;
             return
                 Combined(
                     viewContexts.Select(
@@ -51,6 +53,7 @@ namespace FormGenerator.Drivers
         [HttpGet]
         protected override DriverResult Editor(ContentPart part, GenericField field, dynamic shapeHelper)
         {
+            var t = field.PartFieldDefinition.Settings.GetModel<GenericFieldSettings>().MaxLength;
             var dClass = ((FormPart)part).Record;
             ViewContext viewContext = _displayService.Display(dClass, shapeHelper, field.Name);
             return Combined(ContentShape(viewContext.ShapeType, () => viewContext.ShapeResult));
@@ -58,7 +61,7 @@ namespace FormGenerator.Drivers
         [HttpPost]
         protected override DriverResult Editor(ContentPart part, GenericField field, IUpdateModel updater, dynamic shapeHelper)
         {
-
+            var tsdf = field.PartFieldDefinition.Settings.GetModel<GenericFieldSettings>().MaxLength;
             var dClass = ((FormPart)part).Record;
             var contorller = (Controller)updater;
 
@@ -66,10 +69,8 @@ namespace FormGenerator.Drivers
             {
                 var t = contorller.Request.Form[property.Name];
             }
-
-
-
-            updater.TryUpdateModel(part, GetPrefix(field, part), null, null);
+            var settings = field.PartFieldDefinition.Settings.GetModel<GenericFieldSettings>();
+            
             return Editor(part, field, shapeHelper);
         }
 

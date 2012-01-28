@@ -23,6 +23,5 @@ C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Antlr3.
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Orchard.Core.pdb
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Orchard.Framework.pdb
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\ClaySharp.pdb
-C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\FluentNHibernate.pdb
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Orchard.ContentTypes.dll
 C:\root\development\work\OrchardModules\Form_Generator\FormGenerator\bin\Orchard.ContentTypes.pdb

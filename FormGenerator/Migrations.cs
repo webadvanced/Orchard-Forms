@@ -56,7 +56,7 @@ namespace FormGenerator
 
 
             ContentDefinitionManager.AlterTypeDefinition("Form", cfg => cfg
-                .WithPart("FormPart")
+                .WithPart("FormDefinitionPart")
                 .WithPart("CommonPart")
                 .Creatable()
                 );
@@ -73,6 +73,16 @@ namespace FormGenerator
                 .WithPart("PropertyPart")
                 );
             return 2;
+        }
+
+        public int UpdateFrom2()
+        {
+            ContentDefinitionManager.AlterTypeDefinition("Form", cfg => cfg
+                    .WithPart("FormPart")
+                    .WithPart("CommonPart")
+                    .Creatable()
+                    );
+            return 3;
         }
     }
 }

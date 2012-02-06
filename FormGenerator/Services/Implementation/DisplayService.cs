@@ -19,7 +19,7 @@ namespace FormGenerator.Services.Implementation
                                               {                                                 
                                                   ConstructorInfo ci = ct.GetConstructor(new Type[] { });
                                                   var instance = ci.Invoke(new Object[] { });
-                                                  ct.GetMethod("Display").Invoke(instance, new object[] { property, viewContext, shapeHelper });
+                                                  ct.GetMethod("DisplayValue").Invoke(instance, new object[] { property, viewContext, shapeHelper });
                                               });
             return viewContext;
         }
@@ -34,7 +34,15 @@ namespace FormGenerator.Services.Implementation
             throw new NotImplementedException();
         }
 
-        public static IEnumerable<Type> TypesImplementingInterface(Type desiredType)
+        public IEnumerable<string> GetAllFieldTypes()
+        {
+            var derivedTypes = TypesImplementingInterface(typeof(IAppearanceHandler));
+            var list = new List<string>();
+            derivedTypes.ToList().ForEach(t => list.Add(t.Name.Replace("Handler","")));
+            return list;
+        }
+
+        private IEnumerable<Type> TypesImplementingInterface(Type desiredType)
         {
             return AppDomain
                 .CurrentDomain

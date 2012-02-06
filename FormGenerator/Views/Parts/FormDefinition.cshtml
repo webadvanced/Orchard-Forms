@@ -1,0 +1,89 @@
+﻿@using FormGenerator.Models;
+@using Orchard.Utility.Extensions;
+@{
+    IEnumerable<string> fieldTypeList = Model.FieldTypeList;
+}
+<style>
+  	h1 { padding: .2em; margin: 0 0 0em; }
+    #products
+    {
+        
+        width: 500px;
+        margin-right: 2em;
+    }
+    #cart
+    {
+        width: 800px;
+        float: left;
+    }
+    /* style the list to maximize the droppable hitarea */
+    #cart ol
+    {
+        margin: 0;
+        padding: 1em 0 1em 3em;
+    }
+</style>
+<link href="/Modules/FormGenerator/Styles/overcast/jquery-ui-1.8.17.custom.css"
+    rel="stylesheet" type="text/css" />
+<div id="products">
+    <div id="catalog">
+    <h3><a href="#">Field Types</a></h3>
+        <div>
+            <ul>
+                @foreach (var item in fieldTypeList)
+                {
+                    <li>@item</li>
+                }
+            </ul>
+        </div>
+            <h3><a href="#">Field</a></h3>
+        <div>
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="cart">
+	<h1 class="ui-widget-header">Form</h1>
+	<div class="ui-widget-content">
+		<ol>
+			<li class="placeholder">Add your fields here</li>
+		</ol>
+	</div>
+</div>
+
+
+@using (Script.Foot())
+{ 
+    <script src="/Modules/FormGenerator/Scripts/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#catalog").accordion();
+            $("#catalog li").draggable({
+                appendTo: "body",
+                helper: "clone"
+            });
+            $("#cart ol").droppable({
+                activeClass: "ui-state-default",
+                hoverClass: "ui-state-hover",
+                accept: ":not(.ui-sortable-helper)",
+                drop: function (event, ui) {
+                    $(this).find(".placeholder").remove();
+                    $("<li></li>").text(ui.draggable.text()).appendTo(this);
+                }
+            }).sortable({
+                items: "li:not(.placeholder)",
+                sort: function () {
+                    // gets added unintentionally by droppable interacting with sortable
+                    // using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+                    $(this).removeClass("ui-state-default");
+                }
+            });
+
+        });
+    </script> 
+}

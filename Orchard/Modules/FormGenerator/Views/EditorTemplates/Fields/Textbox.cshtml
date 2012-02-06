@@ -1,0 +1,17 @@
+﻿@using FormGenerator.Models;
+@using Orchard.Utility.Extensions;
+
+@{
+  Property p = Model.property;
+}
+
+@*@if (!String.IsNullOrWhiteSpace(Model.ContentField.FileName)) {
+<p class="image-field">
+   <span class="name">@name.CamelFriendly() :</span>
+  <img src="@Url.Content(Model.ContentField.FileName)" alt="@Model.ContentField.AlternateText" width="@Model.ContentField.Width" height="@Model.ContentField.Height"/>
+</p>
+}*@
+
+<span>@p.DisplayContext.Name :</span>
+<input type="text" name='@p.Name' />
+<br />

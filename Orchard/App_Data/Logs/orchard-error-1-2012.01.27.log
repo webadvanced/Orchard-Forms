@@ -56,3 +56,65 @@ NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned 
 NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
 2012-01-27 14:08:07,985 [76] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
 NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:40,864 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:40,881 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,183 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,183 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,207 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,207 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,225 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,226 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,243 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,243 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,262 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:29:41,262 [62] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: Interceptor.OnPrepareStatement(SqlString) returned null or empty SqlString.
+2012-01-27 17:34:42,134 [43] NHibernate.Util.ADOExceptionReporter - Transaction (Process ID 54) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2012-01-27 17:34:42,135 [43] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.Exceptions.GenericADOException: could not initialize a collection: [Orchard.ContentManagement.Records.ContentItemRecord.Versions#1][SQL: SELECT versions0_.ContentItemRecord_Id as ContentI6_1_, versions0_.Id as Id1_, versions0_.Id as Id53_0_, versions0_.Number as Number53_0_, versions0_.Published as Published53_0_, versions0_.Latest as Latest53_0_, versions0_.Data as Data53_0_, versions0_.ContentItemRecord_id as ContentI6_53_0_ FROM Orchard_Framework_ContentItemVersionRecord versions0_ WHERE versions0_.ContentItemRecord_Id=?] ---> System.Data.SqlClient.SqlException: Transaction (Process ID 54) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   at System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at NHibernate.Driver.NHybridDataReader.Read()
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   at NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   at NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   at NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   at NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   at NHibernate.Collection.Generic.PersistentGenericBag`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Orchard.ContentManagement.DefaultContentManager.GetVersionRecord(VersionOptions options, ContentItemRecord itemRecord) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentManager.cs:line 172
+   at Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentManager.cs:line 132
+   at Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentManager.cs:line 110
+   at Orchard.ContentManagement.ContentGetExtensions.Get[T](IContentManager manager, Int32 id) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\ContentExtensions.cs:line 146
+   at Orchard.Core.Settings.Services.SiteService.GetSiteSettings() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Settings\Services\SiteService.cs:line 29
+   at Orchard.Settings.CurrentSiteWorkContext.Get[T](String name) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Settings\CurrentSiteWorkContext.cs:line 13
+   at Orchard.Environment.WorkContextImplementation.<>c__DisplayClass7`1.<FindResolverForState>b__2(IWorkContextStateProvider wcsp) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\WorkContextImplementation.cs:line 32
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Orchard.Environment.WorkContextImplementation.FindResolverForState[T](String name) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\WorkContextImplementation.cs:line 32
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.WorkContextImplementation.GetState[T](String name) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\WorkContextImplementation.cs:line 27
+   at Orchard.WorkContext.get_CurrentSite() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\WorkContext.cs:line 25
+   at Orchard.Warmup.Services.WarmupTask.Sweep()
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Tasks\BackgroundService.cs:line 31

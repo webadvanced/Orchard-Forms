@@ -19,7 +19,7 @@ namespace FormGenerator.Field
             throw new NotImplementedException();
         }
 
-        public GenericFieldSettings Settings { get; set; }
+        public ValueGenericFieldSettings Settings { get; set; }
         public string FieldName { get; set; }
     }
 }

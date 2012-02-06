@@ -4,10 +4,13 @@ using Orchard.ContentManagement.Drivers;
 namespace FormGenerator.Models.VisualAppearance
 {
     public interface IAppearanceHandler
-    {
-        IAppearanceHandler Next { get; set; }
-        void Process(Object o);
-        void Editor(Class dClass, ViewContext viewContext, dynamic shapeHelper);
-        void Display(Property property, ViewContext viewContext, dynamic shapeHelper);
+    {        
+        void ProcessValue(Object o);
+        void EditorValue(Property property, ViewContext viewContext, dynamic shapeHelper);
+        void DisplayValue(Property property, ViewContext viewContext, dynamic shapeHelper);
+
+        void ProcessProperty(Object o);
+        void EditorProperty(Property property, ViewContext viewContext, dynamic shapeHelper);
+        void DisplayProperty(Property property, ViewContext viewContext, dynamic shapeHelper);
     }
 }

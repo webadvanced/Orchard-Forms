@@ -28,9 +28,9 @@ namespace FormGenerator.Services.Implementation
         {
         
             var property = new PropertyFactory(_contentManager).Create(dClass, initiailize);
-            _contentDefinitionService.AddFieldToPart(property.Name,"GenericField","FormPart");
+            _contentDefinitionService.AddFieldToPart(property.Name,"ValueGenericField","FormDefinitionPart");
             var typeViewModel = _contentDefinitionService.GetType("Form");
-            var updateModel = new FieldUpdateModel { Settings = new GenericFieldSettings { MaxLength = "25" }, FieldName = property.Name };
+            var updateModel = new FieldUpdateModel { Settings = new ValueGenericFieldSettings { MaxLength = "25" }, FieldName = property.Name };
             _contentDefinitionService.AlterType(typeViewModel, updateModel);
             
             return property;

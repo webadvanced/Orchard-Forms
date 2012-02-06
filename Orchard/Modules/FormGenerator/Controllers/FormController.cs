@@ -26,19 +26,19 @@ namespace FormGenerator.Controllers
 
         public ActionResult Create()
         {
-            _definitionService.AddPropertyToClass(_contentManager.Query<FormPart>().List().First().Record, p =>
+            _definitionService.AddPropertyToClass(_contentManager.Query<FormDefinitionPart>().List().First().Record, p =>
             {
-                p.Name = "TextBox7";
+                p.Name = "RadioButtton1";
                 p.DisplayContext = new DisplayContext
                 {
-                    Name = "Text Box 7",
-                    Type = "TextBox"
+                    Name = "Radio Buttton 1",
+                    Type = "RadioButton"
                 };
                 p.Settings = "";
             });
 
 
-            var form =_services.ContentManager.BuildEditor(_contentManager.Query<FormPart>().List().First());
+            var form =_services.ContentManager.BuildEditor(_contentManager.Query<FormDefinitionPart>().List().First());
             var list = Shape.List();
             list.Add(form);
             dynamic viewModel = Shape.ViewModel().ContentItems(list);

@@ -2,7 +2,10 @@
 
   <Match ContentType="Form">
     <Place Parts_Form="Content:1"/>
-    <Place Form_Create="Content:1"/>
+  </Match>
+
+  <Match ContentType="FormDefinition">
+    <Place Parts_FormDefinition="Content:1"/>
   </Match>
 
 

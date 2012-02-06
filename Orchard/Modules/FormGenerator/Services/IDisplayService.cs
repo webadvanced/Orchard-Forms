@@ -10,5 +10,6 @@ namespace FormGenerator.Services
         ViewContext Display(Class dClass, dynamic shapeHelper,string propertyName);
         void Editor(Class dClass);
         void Process(Object o);
+        IEnumerable<string> GetAllFieldTypes();
     }
 }

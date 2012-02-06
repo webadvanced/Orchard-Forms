@@ -11,24 +11,39 @@ namespace FormGenerator.Models.VisualAppearance
             set { throw new NotImplementedException(); }
         }
 
-        public void Process(Object o)
+        public void ProcessValue(Object o)
         {
             throw new NotImplementedException();
         }
 
-        public void Editor(Class dClass, ViewContext viewContext, dynamic shapeHelper)
+        public void EditorValue(Property property, ViewContext viewContext, dynamic shapeHelper)
         {
             throw new NotImplementedException();
         }
 
-        public void Display(Property property, ViewContext viewContext, dynamic shapeHelper)
+        public void EditorProperty(Property property, ViewContext viewContext, dynamic shapeHelper)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DisplayProperty(Property property, ViewContext viewContext, dynamic shapeHelper)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DisplayValue(Property property, ViewContext viewContext, dynamic shapeHelper)
         {         
                 if (property.DisplayContext.Type == "RadioButton")
                 {
                     viewContext.Html += "";
-                    viewContext.ShapeType = "Fields_RadioButton";
+                    viewContext.ShapeType = "EditorTemplates_Fields_Value_RadioButton";
                     viewContext.ShapeResult = shapeHelper.Fields_RadioButton(property: property);
                 }     
+        }
+
+        public void ProcessProperty(Object o)
+        {
+            throw new NotImplementedException();
         }
     }
 }

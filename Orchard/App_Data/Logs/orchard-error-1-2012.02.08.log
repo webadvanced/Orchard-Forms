@@ -1,0 +1,57 @@
+2012-02-08 16:22:50,903 [33] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:22:50,930 [33] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:22:51,006 [33] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:22:51,006 [33] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:22:51,088 [33] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:22:51,089 [33] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded

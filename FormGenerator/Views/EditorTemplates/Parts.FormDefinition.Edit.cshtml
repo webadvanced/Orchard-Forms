@@ -1,0 +1,15 @@
+﻿@model FormGenerator.ViewModel.FormDefinitionViewModel
+@{
+    Script.Include("formbuilder.admin.edit.js");
+    Script.Include("jquery-ui-1.8.17.custom.min.js");
+    Script.Include("jquery.scrollTo-1.4.2-min.js");
+    
+    Style.Include("FormBuilder.Admin.Edit.css");
+}
+
+<div class="fields">
+    <div class="fields-container">
+      @*  @Html.EditorFor(m => m.Fields, "FormFields", "")*@
+    </div>
+</div>
+

@@ -4,8 +4,9 @@ using Orchard.ContentManagement.Records;
 
 namespace FormGenerator.Models
 {
-    public class Value : ContentPartRecord
-    {        
+    public class Value 
+    {
+        public virtual int Id { get; set; }
         public virtual Property Property { get; set; }
         public virtual Object Object { get; set; }
         public virtual string value { get; set; }

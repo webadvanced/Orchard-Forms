@@ -1,5 +1,5 @@
 Name: FormGenerator
-AntiForgery: enabled
+AntiForgery: disabled
 Author: The Webadvanced Team
 Website: http://www.webadvanced.com/
 Version: 1.0

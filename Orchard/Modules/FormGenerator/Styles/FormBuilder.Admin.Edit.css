@@ -1,0 +1,55 @@
+﻿/* Main fields display */
+.fields { width: 600px;float: left;}
+
+.manage-field, .field-tools {
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    background-color: #FFF;
+}
+
+.field-tools.sticky {
+    position: fixed;
+    top: 15px;
+    left: 885px;
+}
+
+.manage-field-header {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 5px 15px;
+    cursor: move;
+}
+
+.manage-field-header .expando-glyph-container { margin: 0px 5px 0px 15px; }
+.manage-field-header .handler-type { float: right;padding: 9px 12px 9px 0px;color: #666;letter-spacing: 2px;}
+.manage-field-header a.delete {
+    float: right;
+    width: 16px;
+    height: 16px;
+    opacity: 0.6;
+    text-indent: -999px;
+    overflow: hidden;
+    background-image: url(delete.png);
+    margin: 12px 0px;
+    
+}
+.manage-field-header a.delete:hover { opacity: 1.0;}
+
+.manage-field-body { padding: 15px;}
+
+/* Field Editor layouts */
+fieldset.inline { float: left;padding-right: 15px;clear: none;}
+
+.manage-field hr { clear: both; }
+
+p.help-text { color: #777;font-size: 0.85em;}
+
+/* Field tools palette */
+.field-tools { margin-left: 15px; width: 200px;float: left;}
+.field-tools .header { padding: 5px 15px;color: #fff;background-color: #4a4a4a;border-radius: 6px 6px 0px 0px;}
+.field-tools .body { padding: 5px 15px;}
+.field-tools .field-type-header { border-bottom: 1px solid #EEE;}
+.handler-list {border-bottom: 1px solid #EEE;}
+.handler-list li { padding: 2px 0px 2px 10px}

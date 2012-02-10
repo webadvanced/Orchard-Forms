@@ -1,0 +1,271 @@
+2012-02-09 10:17:48,258 [6] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2012-02-09 10:17:48,281 [6] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2012-02-09 10:17:48,299 [6] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ? ]
+Positional parameters:  #0>2/9/2012 6:12:24 PM
+[SQL: SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ?] ---> System.Data.SqlClient.SqlException: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean& marsCapable)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-02-09 13:46:56,036 [11] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - KeyNotFoundException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at FormGenerator.Services.Implementation.DisplayService.GetHandler(String handlerName)
+   at FormGenerator.Services.Implementation.DisplayService.GetFieldEditShapes(Class dClass, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:47:55,788 [14] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - KeyNotFoundException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at FormGenerator.Services.Implementation.DisplayService.GetHandler(String handlerName)
+   at FormGenerator.Services.Implementation.DisplayService.GetFieldEditShapes(Class dClass, Object shapeHelper)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:48:03,988 [7] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - KeyNotFoundException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at FormGenerator.Services.Implementation.DisplayService.GetHandler(String handlerName)
+   at FormGenerator.Services.Implementation.DisplayService.GetFieldEditShapes(Class dClass, Object shapeHelper)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:48:22,146 [12] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - KeyNotFoundException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at FormGenerator.Services.Implementation.DisplayService.GetHandler(String handlerName)
+   at FormGenerator.Services.Implementation.DisplayService.GetFieldEditShapes(Class dClass, Object shapeHelper)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:48:45,804 [14] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - KeyNotFoundException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at FormGenerator.Services.Implementation.DisplayService.GetHandler(String handlerName)
+   at FormGenerator.Services.Implementation.DisplayService.GetFieldEditShapes(Class dClass, Object shapeHelper)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:49:05,935 [20] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - KeyNotFoundException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at FormGenerator.Services.Implementation.DisplayService.GetHandler(String handlerName)
+   at FormGenerator.Services.Implementation.DisplayService.GetFieldEditShapes(Class dClass, Object shapeHelper)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:50:09,044 [18] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - KeyNotFoundException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at FormGenerator.Services.Implementation.DisplayService.GetHandler(String handlerName)
+   at FormGenerator.Services.Implementation.DisplayService.GetFieldEditShapes(Class dClass, Object shapeHelper)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:50:09,059 [32] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-09 13:50:09,061 [32] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-09 13:50:09,061 [32] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ? ]
+Positional parameters:  #0>2/9/2012 9:50:09 PM
+[SQL: SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ?] ---> System.Data.SqlClient.SqlException: The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   at System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   at System.Data.SqlClient.TdsParser.SendPreLoginHandshake(Byte[] instanceName, Boolean encrypt)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-02-09 13:51:20,138 [36] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:51:57,969 [31] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:53:00,639 [19] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:53:26,825 [20] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:53:37,529 [28] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:54:01,704 [23] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:56:40,387 [30] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClassf.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:57:05,944 [30] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.Services.Implementation.FieldHandlerService.GetFieldHandler(Property property)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClassf.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:57:33,640 [32] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NullReferenceException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FormGenerator.VisualAppearance.TextBoxHandler.AddViewModel(FormDefinitionViewModel formDefinitionViewModel, Property property, Int32 index)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClassf.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-09 13:58:10,974 [26] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NullReferenceException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FormGenerator.VisualAppearance.TextBoxHandler.AddViewModel(FormDefinitionViewModel formDefinitionViewModel, Property property, Int32 index)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormDefinitionViewModel(Class dClass)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClassf.<Editor>b__b()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19

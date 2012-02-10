@@ -1,0 +1,518 @@
+2012-02-08 11:08:51,203 [18] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NotImplementedException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NotImplementedException: The method or operation is not implemented.
+   at FormGenerator.VisualAppearance.TextBoxHandler.DisplayProperty(Property property, ViewContext viewContext, Object shapeHelper)
+   at CallSite.Target(Closure , CallSite , IFieldHandler , Property , ViewContext , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid4[T0,T1,T2,T3](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   at FormGenerator.Services.Implementation.DisplayService.GetFormEditor(Class dClass, Object shapeHelper)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:31:14,176 [6] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:32:05,079 [14] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:32:13,666 [15] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:36:08,923 [21] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:37:41,204 [14] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:39:23,360 [6] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:40:15,741 [24] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:40:20,649 [6] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:40:54,728 [12] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:41:45,455 [17] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:43:50,847 [6] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:43:58,901 [13] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:44:32,464 [24] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:44:56,652 [15] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:46:24,862 [11] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - RuntimeBinderException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Orchard.ContentManagement.Drivers.ContentPartDriver<FormGenerator.Models.FormDefinitionPart>.ContentShape(string, System.Func<object>)' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , FormDefinitionDriver , String , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass14.<Editor>b__f(ViewContext viewContext)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at FormGenerator.Drivers.FormDefinitionDriver.Editor(FormDefinitionPart part, Object shapeHelper)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.BuildEditor(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 25
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 53
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:58:10,159 [25] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NullReferenceException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FormGenerator.Drivers.FormDefinitionDriver.GetFieldTypes()
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__c()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 13:58:35,186 [21] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NullReferenceException thrown from IContentPartDriver by FormGenerator.Drivers.FormDefinitionDriver
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FormGenerator.Drivers.FormDefinitionDriver.GetFieldTypes()
+   at FormGenerator.Drivers.FormDefinitionDriver.<>c__DisplayClass11.<Editor>b__c()
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassd.<ContentShape>b__c(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 74
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass13.<ContentShapeImplementation>b__12(BuildShapeContext ctx) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 82
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 37
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 25
+   at Orchard.ContentManagement.Drivers.CombinedResult.Apply(BuildEditorContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\CombinedResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassd.<BuildEditor>b__c(IContentPartDriver driver) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 55
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-08 14:54:04,305 [31] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-08 14:54:04,316 [31] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-08 14:54:04,317 [31] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ? ]
+Positional parameters:  #0>2/8/2012 10:54:04 PM
+[SQL: SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ?] ---> System.Data.SqlClient.SqlException: The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   at System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   at System.Data.SqlClient.TdsParser.SendPreLoginHandshake(Byte[] instanceName, Boolean encrypt)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-02-08 15:09:43,686 [17] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-08 15:09:43,696 [17] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-08 15:09:43,698 [17] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ? ]
+Positional parameters:  #0>2/8/2012 11:09:43 PM
+[SQL: SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ?] ---> System.Data.SqlClient.SqlException: The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   at System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   at System.Data.SqlClient.TdsParser.SendPreLoginHandshake(Byte[] instanceName, Boolean encrypt)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-02-08 16:04:11,786 [13] NHibernate.Util.ADOExceptionReporter - The operation is not valid for the state of the transaction.
+2012-02-08 16:04:11,796 [13] NHibernate.Util.ADOExceptionReporter - Transaction Timeout
+2012-02-08 16:04:11,812 [13] Orchard.Core.Containers.Services.ContainersPathConstraintUpdater - Error while setting path constraints for containers.
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id53_3_, this_.Number as Number53_3_, this_.Published as Published53_3_, this_.Latest as Latest53_3_, this_.Data as Data53_3_, this_.ContentItemRecord_id as ContentI6_53_3_, routepartr1_.Id as Id28_0_, routepartr1_.Title as Title28_0_, routepartr1_.Slug as Slug28_0_, routepartr1_.Path as Path28_0_, routepartr1_.ContentItemRecord_id as ContentI5_28_0_, contentite2_.Id as Id52_1_, contentite2_.Data as Data52_1_, contentite2_.ContentType_id as ContentT3_52_1_, containerp3_.Id as Id36_2_, containerp3_.ItemContentType as ItemCont2_36_2_, containerp3_.Paginated as Paginated36_2_, containerp3_.PageSize as PageSize36_2_, containerp3_.OrderByProperty as OrderByP5_36_2_, containerp3_.OrderByDirection as OrderByD6_36_2_ FROM Orchard_Framework_ContentItemVersionRecord this_ inner join Routable_RoutePartRecord routepartr1_ on this_.Id=routepartr1_.Id inner join Orchard_Framework_ContentItemRecord contentite2_ on this_.ContentItemRecord_id=contentite2_.Id inner join Containers_ContainerPartRecord containerp3_ on contentite2_.Id=containerp3_.Id WHERE this_.Published = ? ]
+Positional parameters:  #0>True
+[SQL: SELECT this_.Id as Id53_3_, this_.Number as Number53_3_, this_.Published as Published53_3_, this_.Latest as Latest53_3_, this_.Data as Data53_3_, this_.ContentItemRecord_id as ContentI6_53_3_, routepartr1_.Id as Id28_0_, routepartr1_.Title as Title28_0_, routepartr1_.Slug as Slug28_0_, routepartr1_.Path as Path28_0_, routepartr1_.ContentItemRecord_id as ContentI5_28_0_, contentite2_.Id as Id52_1_, contentite2_.Data as Data52_1_, contentite2_.ContentType_id as ContentT3_52_1_, containerp3_.Id as Id36_2_, containerp3_.ItemContentType as ItemCont2_36_2_, containerp3_.Paginated as Paginated36_2_, containerp3_.PageSize as PageSize36_2_, containerp3_.OrderByProperty as OrderByP5_36_2_, containerp3_.OrderByDirection as OrderByD6_36_2_ FROM Orchard_Framework_ContentItemVersionRecord this_ inner join Routable_RoutePartRecord routepartr1_ on this_.Id=routepartr1_.Id inner join Orchard_Framework_ContentItemRecord contentite2_ on this_.ContentItemRecord_id=contentite2_.Id inner join Containers_ContainerPartRecord containerp3_ on contentite2_.Id=containerp3_.Id WHERE this_.Published = ?] ---> System.Transactions.TransactionException: The operation is not valid for the state of the transaction. ---> System.TimeoutException: Transaction Timeout
+   --- End of inner exception stack trace ---
+   at System.Transactions.TransactionState.EnlistVolatile(InternalTransaction tx, IEnlistmentNotification enlistmentNotification, EnlistmentOptions enlistmentOptions, Transaction atomicTransaction)
+   at System.Transactions.Transaction.EnlistVolatile(IEnlistmentNotification enlistmentNotification, EnlistmentOptions enlistmentOptions)
+   at NHibernate.Transaction.AdoNetWithDistrubtedTransactionFactory.EnlistInDistributedTransactionIfNeeded(ISessionImplementor session)
+   at NHibernate.Impl.AbstractSessionImpl.EnlistInAmbientTransactionIfNeeded()
+   at NHibernate.Impl.AbstractSessionImpl.CheckAndUpdateSessionStatus()
+   at NHibernate.Impl.SessionImpl.get_Batcher()
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List[T]()
+   at Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 139
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.List() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 184
+   at Orchard.Core.Containers.Services.ContainersPathConstraintUpdater.Refresh() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Containers\Services\ContainersPathConstraintUpdater.cs:line 36
+2012-02-08 16:36:19,810 [23] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:36:19,825 [23] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:36:19,893 [23] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:36:19,894 [23] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:36:19,959 [23] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:36:19,959 [23] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:36:20,645 [3] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:36:20,645 [3] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:36:20,694 [3] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:36:20,694 [3] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:36:20,746 [3] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:36:20,747 [3] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:38:08,380 [33] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:38:08,381 [33] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:38:08,427 [33] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:38:08,428 [33] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 16:38:08,489 [33] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Voting'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Voting' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Voting'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2012-02-08 16:38:08,490 [33] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Voting' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2012-02-08 17:52:52,585 [14] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-08 17:52:52,600 [14] NHibernate.Util.ADOExceptionReporter - The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+2012-02-08 17:52:52,602 [14] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ? ]
+Positional parameters:  #0>2/9/2012 1:52:52 AM
+[SQL: SELECT this_.Id as Id21_0_, this_.TaskType as TaskType21_0_, this_.ScheduledUtc as Schedule3_21_0_, this_.ContentItemVersionRecord_id as ContentI4_21_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ?] ---> System.Data.SqlClient.SqlException: The client was unable to establish a connection because of an error during connection initialization process before login. Possible causes include the following:  the client tried to connect to an unsupported version of SQL Server; the server was too busy to accept new connections; or there was a resource limitation (insufficient memory or maximum allowed connections) on the server. (provider: Shared Memory Provider, error: 0 - The handle is invalid.)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   at System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   at System.Data.SqlClient.TdsParser.SendPreLoginHandshake(Byte[] instanceName, Boolean encrypt)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\Tasks\BackgroundService.cs:line 31

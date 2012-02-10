@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FormGenerator.Models.FormDefinitionPart>
+@{
+    string returnUrl = "~/Admin/FormBuilder";
+}
+<table class="items">
+    @foreach(var item in Model) {
+        <tr>
+        <td>@Html.ActionLink(item.DisplayName, "Edit", new {formId = item.Id})</td>
+        <td>@Html.Link("Remove", Url.Content("~/") + "Admin/Contents/Remove/" + item.Id + "?returnUrl=" + returnUrl)</td>
+        </tr>
+    }
+</table>
+<fieldset>
+    @Html.ActionLink("Create New Form", "Create", "Admin", null, new {@class = "button"})
+</fieldset>

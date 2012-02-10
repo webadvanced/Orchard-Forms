@@ -13,32 +13,54 @@ namespace FormGenerator
                 routes.Add(routeDescriptor);
         }
 
+        //public IEnumerable<RouteDescriptor> GetRoutes()
+        //{
+        //    return new[] {
+        //        new RouteDescriptor {
+        //            Priority = 5,
+        //            Route = new Route(
+        //                "Form/Create",
+        //                new RouteValueDictionary {
+        //                    {"area", "FormGenerator"},
+        //                    {"controller", "Form"},
+        //                    {"action", "Create"}
+        //                },
+        //                new RouteValueDictionary(),
+        //                new RouteValueDictionary {
+        //                    {"area", "FormGenerator"}
+        //                },
+        //                new MvcRouteHandler())
+        //        }
+        //        ,  new RouteDescriptor {
+        //            Priority = 5,
+        //            Route = new Route(
+        //                "Form/CreatePOST",
+        //                new RouteValueDictionary {
+        //                    {"area", "FormGenerator"},
+        //                    {"controller", "Form"},
+        //                    {"action", "CreatePOST"}
+        //                },
+        //                new RouteValueDictionary(),
+        //                new RouteValueDictionary {
+        //                    {"area", "FormGenerator"}
+        //                },
+        //                new MvcRouteHandler())
+        //        }
+        //    };
+
+        //}
+
         public IEnumerable<RouteDescriptor> GetRoutes()
         {
             return new[] {
-                new RouteDescriptor {
+                new RouteDescriptor {   
                     Priority = 5,
                     Route = new Route(
-                        "Form/Create",
+                        "Admin/FormGenerator/{action}",
                         new RouteValueDictionary {
                             {"area", "FormGenerator"},
-                            {"controller", "Form"},
-                            {"action", "Create"}
-                        },
-                        new RouteValueDictionary(),
-                        new RouteValueDictionary {
-                            {"area", "FormGenerator"}
-                        },
-                        new MvcRouteHandler())
-                }
-                ,  new RouteDescriptor {
-                    Priority = 5,
-                    Route = new Route(
-                        "Form/CreatePOST",
-                        new RouteValueDictionary {
-                            {"area", "FormGenerator"},
-                            {"controller", "Form"},
-                            {"action", "CreatePOST"}
+                            {"controller", "Admin"},
+                            {"action", "Index"}
                         },
                         new RouteValueDictionary(),
                         new RouteValueDictionary {
@@ -47,7 +69,6 @@ namespace FormGenerator
                         new MvcRouteHandler())
                 }
             };
-
         }
     }
 }

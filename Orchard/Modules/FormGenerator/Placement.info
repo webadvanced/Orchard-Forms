@@ -1,17 +1,12 @@
 ﻿<Placement>
 
-  <Match ContentType="Form">
-    <Place Parts_Form="Content:1"/>
-  </Match>
-
   <Match ContentType="FormDefinition">
-    <Place Parts_FormDefinition="Content:1"/>
+    <Place Parts_FormDefinition_Edit="Content:5" />
   </Match>
 
 
-
-  <Place Fields_Textbox="Content:12"/>
-  <Place Fields_RadioButton="Content:11"/>
+  <Place FieldTypeList="Content:6"/>
+  <Place Property_Textbox="Content:8"/>
 
 
 </Placement>

@@ -51,11 +51,12 @@ namespace FormGenerator
                 .ContentPartRecord()
                 .Column("Name", DbType.String)
                 .Column("Type", DbType.String)
+                .Column("Weight", DbType.String)
                 .Column("Property_id", DbType.Int32)
             );
 
 
-            ContentDefinitionManager.AlterTypeDefinition("Form", cfg => cfg
+            ContentDefinitionManager.AlterTypeDefinition("FormDefinition", cfg => cfg
                 .WithPart("FormDefinitionPart")
                 .WithPart("CommonPart")
                 .Creatable()
@@ -83,6 +84,22 @@ namespace FormGenerator
                     .Creatable()
                     );
             return 3;
+        }
+
+        public int UpdateFrom3()
+        {
+            ContentDefinitionManager.AlterTypeDefinition("Form", cfg => cfg
+                .WithPart("RoutePart")
+                );
+            return 4;
+        }
+
+        public int UpdateFrom4()
+        {
+            ContentDefinitionManager.AlterTypeDefinition("FormDefinition", cfg => cfg
+                .WithPart("RoutePart")
+                );
+            return 5;
         }
     }
 }

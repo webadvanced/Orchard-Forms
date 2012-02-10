@@ -1,0 +1,50 @@
+2012-02-07 17:10:31,408 [31] Orchard.ContentManagement.DefaultContentManager - ObjectNotFoundException thrown from IContentHandler by Orchard.Core.Routable.Handlers.RoutePartHandler
+NHibernate.ObjectNotFoundException: No row with the given identifier exists[Orchard.ContentManagement.Records.ContentItemRecord#66]
+   at NHibernate.Impl.SessionFactoryImpl.DefaultEntityNotFoundDelegate.HandleEntityNotFound(String entityName, Object id)
+   at NHibernate.Proxy.AbstractLazyInitializer.CheckTargetState()
+   at NHibernate.Proxy.AbstractLazyInitializer.Initialize()
+   at NHibernate.ByteCode.Castle.LazyInitializer.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at ContentItemRecordProxy182d2ad088aa4c27b63b595b86dc7524.get_ContentType()
+   at Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentManager.cs:line 149
+   at Orchard.ContentManagement.DefaultContentQuery.<Slice>b__0(ContentItemVersionRecord x) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 141
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 139
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.List() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 184
+   at Orchard.Core.Routable.Services.RoutableService.GetSimilarPaths(String path) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Services\RoutableService.cs:line 0
+   at Orchard.Core.Routable.Services.RoutableService.ProcessSlug(IRoutableAspect part) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Services\RoutableService.cs:line 139
+   at Orchard.Core.Routable.Handlers.RoutePartHandler.<.ctor>b__1(RoutePart routable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Handlers\RoutePartHandler.cs:line 43
+   at Orchard.Core.Routable.Handlers.RoutePartHandler.FinalizePath(RoutePart route, PublishContentContext context, Action`1 processSlug) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Handlers\RoutePartHandler.cs:line 106
+   at Orchard.Core.Routable.Handlers.RoutePartHandler.<>c__DisplayClass9.<.ctor>b__2(PublishContentContext context, RoutePart route) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Handlers\RoutePartHandler.cs:line 53
+   at Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Published(PublishContentContext context, TPart instance) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 140
+   at Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Published(PublishContentContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs:line 68
+   at Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Published(PublishContentContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 246
+   at Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass3b.<Publish>b__39(IContentHandler handler) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentManager.cs:line 299
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19
+2012-02-07 17:10:33,512 [28] Orchard.ContentManagement.DefaultContentManager - ObjectNotFoundException thrown from IContentHandler by Orchard.Core.Routable.Handlers.RoutePartHandler
+NHibernate.ObjectNotFoundException: No row with the given identifier exists[Orchard.ContentManagement.Records.ContentItemRecord#66]
+   at NHibernate.Impl.SessionFactoryImpl.DefaultEntityNotFoundDelegate.HandleEntityNotFound(String entityName, Object id)
+   at NHibernate.Proxy.AbstractLazyInitializer.CheckTargetState()
+   at NHibernate.Proxy.AbstractLazyInitializer.Initialize()
+   at NHibernate.ByteCode.Castle.LazyInitializer.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at ContentItemRecordProxy182d2ad088aa4c27b63b595b86dc7524.get_ContentType()
+   at Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentManager.cs:line 149
+   at Orchard.ContentManagement.DefaultContentQuery.<Slice>b__0(ContentItemVersionRecord x) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 141
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 139
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.List() in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 184
+   at Orchard.Core.Routable.Services.RoutableService.GetSimilarPaths(String path) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Services\RoutableService.cs:line 0
+   at Orchard.Core.Routable.Services.RoutableService.ProcessSlug(IRoutableAspect part) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Services\RoutableService.cs:line 139
+   at Orchard.Core.Routable.Handlers.RoutePartHandler.<.ctor>b__1(RoutePart routable) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Handlers\RoutePartHandler.cs:line 43
+   at Orchard.Core.Routable.Handlers.RoutePartHandler.FinalizePath(RoutePart route, PublishContentContext context, Action`1 processSlug) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Handlers\RoutePartHandler.cs:line 106
+   at Orchard.Core.Routable.Handlers.RoutePartHandler.<>c__DisplayClass9.<.ctor>b__2(PublishContentContext context, RoutePart route) in c:\Users\sebros\Desktop\1.3.10\src\Orchard.Web\Core\Routable\Handlers\RoutePartHandler.cs:line 53
+   at Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Published(PublishContentContext context, TPart instance) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 140
+   at Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Published(PublishContentContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs:line 68
+   at Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Published(PublishContentContext context) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\Handlers\ContentHandler.cs:line 246
+   at Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass3b.<Publish>b__39(IContentHandler handler) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\ContentManagement\DefaultContentManager.cs:line 299
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\Desktop\1.3.10\src\Orchard\InvokeExtensions.cs:line 19

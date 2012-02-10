@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using FormGenerator.Models;
 using FormGenerator.Models.Factories;
 using FormGenerator.Models.Validation;
-using FormGenerator.Models.VisualAppearance;
 using FormGenerator.Services;
 using FormGenerator.Services.Implementation;
 
@@ -26,8 +25,7 @@ namespace FormGenerator.Test
             {
                 Class = BuildClass(),
                 Name = "Test Property",
-                Settings = "",
-                ContentItemRecord = null,
+                Settings = "",                
                 ValidationRules = null,
                 DisplayContext = new DisplayContext
                                      {
@@ -46,8 +44,7 @@ namespace FormGenerator.Test
             {
                 Class = dClass,
                 Name = name,
-                Settings = setttings,
-                ContentItemRecord = null,
+                Settings = setttings,                
                 ValidationRules = validationRules,
                 DisplayContext = new DisplayContext
                 {
@@ -74,7 +71,7 @@ namespace FormGenerator.Test
 
         public static IDisplayService GetDisplayService()
         {
-            return new DisplayService();
+            return new DisplayService(null);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace FormGenerator.Models
         public virtual string DefaultEmail { get; set; }
         public virtual IList<Property> Properties { get; set; }     
  
-        public bool Validate()
+        public virtual bool Validate()
         {
             throw new NotImplementedException();
         }

@@ -1,0 +1,41 @@
+﻿@model FormGenerator.ViewModel.PropertyViewModels.TextboxViewModel
+@{
+    string title = String.IsNullOrEmpty(Model.Label) ? "New Field" : Model.Label;
+    bool startOpen = ViewData.ContainsKey("StartOpen") && (bool)ViewData["StartOpen"];
+}
+<div class="manage-field">
+    <div class="manage-field-header">
+        <a class="delete" href="#">x</a> <span class="handler-type">@Model.Type.Replace("Handler","")</span>
+        <h3 class="title">
+            <span class="expando-glyph-container @(startOpen ? "open" : "closed")"><span class="expando-glyph">
+                &#8203;</span></span>
+            @title
+        </h3>
+    </div>
+    <div class="manage-field-body group" style="@(startOpen ? "" : "display:none;")">
+        <fieldset class="inline">
+            @Html.Label(Model.Prefix + ".Label")
+            @Html.TextBox(Model.Prefix + ".Label", Model.Label??"", new { @class = "text" })
+        </fieldset>
+        <fieldset class="inline">
+            @Html.Label(Model.Prefix + ".Name")
+            @Html.TextBox(Model.Prefix + ".Name", Model.Name ?? "", new { @class = "text" })
+        </fieldset>
+        <fieldset>
+            @Html.Label(Model.Prefix + ".MaxLength")
+            @Html.TextBox(Model.Prefix + ".MaxLength", Model.MaxLength ?? 0, new { @class = "text" })
+        </fieldset>
+        @*       @if (Model.SettingsTemplate != null)
+        {
+            <hr/>
+            <div class="settings">
+                @{ 
+            Html.RenderTemplates(Model.SettingsTemplate); 
+                }
+            </div>
+        }*@
+        @Html.Hidden(Model.Prefix + ".Type", Model.Type)
+        @Html.Hidden(Model.Prefix + ".Index", Model.Index)
+        @*     @Html.HiddenFor(m => m.Weight)*@
+    </div>
+</div>

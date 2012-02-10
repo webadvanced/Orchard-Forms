@@ -1,0 +1,19 @@
+﻿@model Dictionary<string, List<string>>
+@{
+    string ajaxUrl = Url.Content("~/") + "Admin/FormGenerator/GetFieldEditor";
+}
+<div class="field-tools">
+    <div class="header"><h3>Field Widgets</h3></div>
+    <div class="body">
+        @foreach(var type in Model) {
+            <div class="field-type-header">@type.Key</div>
+            <div class="handler-list">
+                <ul>
+                    @foreach(var handler in type.Value) {
+                        <li><a href="@ajaxUrl">@handler</a></li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+</div>

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using FormGenerator.Models;
-using FormGenerator.Models.VisualAppearance;
+using FormGenerator.ViewModel;
+using FormGenerator.VisualAppearance;
 using Orchard;
 
 namespace FormGenerator.Services
@@ -11,5 +12,7 @@ namespace FormGenerator.Services
         void Editor(Class dClass);
         void Process(Object o);
         IEnumerable<string> GetAllFieldTypes();
+        IEnumerable<ViewContext> GetFieldEditShapes(Class dClass, dynamic shapeHelper);
+        FormDefinitionViewModel GetFormDefinitionViewModel(Class dClass);
     }
 }

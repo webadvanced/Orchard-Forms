@@ -5,8 +5,9 @@ using Orchard.ContentManagement.Records;
 
 namespace FormGenerator.Models
 {
-    public class Object : ContentPartRecord
+    public class Object 
     {
+        public virtual int Id { get; set; }
         public Object()
         {
             Created = DateTime.Now;
